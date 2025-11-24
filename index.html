@@ -1,0 +1,57 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Birthday Wish</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Floating Hearts -->
+  <div class="hearts-container" id="heartsContainer"></div>
+
+  <!-- Name Input Screen -->
+  <div id="nameInputCard" class="card glass fade-in">
+    <h2>Hey Love 💖</h2>
+    <p>What's your name?</p>
+    <input type="text" id="nameInput" placeholder="Enter your name..." />
+    <button id="submitName">OK</button>
+  </div>
+
+  <!-- Birthday Wish Screen -->
+  <div id="birthdayPage" class="hidden fade-in">
+    <div class="card glass">
+      <img src="https://media.giphy.com/media/KztT2c4u8mYYUiMKdJ/giphy.gif" alt="Birthday Gif" class="gif"/>
+      <h2 id="typingText" class="typing"></h2>
+      <p id="messageBox" class="typing"></p>
+      <p id="nextMessage" class="typing highlight"></p>
+    </div>
+  </div>
+
+  <!-- Surprise Screen -->
+  <div id="surpriseCard" class="card glass hidden fade-in">
+    <img src="cute.gif" alt="Surprise" class="gif"/>
+    <h3 id="celebrateText"></h3>
+    <p>Your choice is:</p>
+    <div class="btn-group">
+      <button id="yesBtn">
+  <a href="rotate.html" style="color: white; text-decoration: none;">Absolutely, let's celebrate 🎉</a>
+</button>
+
+      <button id="noBtn">Maybe another time 💬</button>
+    </div>
+  </div>
+
+  <!-- Final Celebration Screen -->
+  <div id="finalCard" class="card glass hidden fade-in">
+    <canvas id="confetti"></canvas>
+    <img src="birthday-cake.gif" alt="Happy Birthday" class="gif"/>
+    <h2 id="finalText"></h2>
+    
+  </div>
+
+  <audio id="bgMusic" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_4d6b8a0192.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
